@@ -1327,7 +1327,7 @@ func (b *backend) RefreshCustomVolume(projectName string, srcProjectName string,
 			})
 		}
 
-		syncSourceSnapshotIndexes, deleteTargetSnapshotIndexes := CompareSnapshots(sourceSnapshotComparable, targetSnapshotsComparable)
+		syncSourceSnapshotIndexes, deleteTargetSnapshotIndexes := CompareSnapshots(sourceSnapshotComparable, targetSnapshotsComparable, false)
 
 		// Delete extra snapshots first.
 		for _, deleteTargetSnapIndex := range deleteTargetSnapshotIndexes {

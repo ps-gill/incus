@@ -185,6 +185,7 @@ type migrationSink struct {
 	push                  bool
 	clusterMoveSourceName string
 	refresh               bool
+	refreshExcludeOlder   bool
 }
 
 // MigrationSinkArgs arguments to configure migration sink.
