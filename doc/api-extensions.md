@@ -2627,3 +2627,7 @@ Allow for creating new LVM cluster pools by setting the `source` to the shared b
 ## `network_ovn_external_interfaces`
 
 This adds support for `bridge.external_interfaces` on OVN networks.
+
+## `custom_volume_refresh_exclude_older_snapshots`
+
+This adds support for excluding source snapshots earlier than latest target shapshot.
