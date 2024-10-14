@@ -362,6 +362,10 @@ type InstanceSource struct {
 	// Example: false
 	Refresh bool `json:"refresh,omitempty" yaml:"refresh,omitempty"`
 
+	// Whether to exclude source snapshots earlier than latest target shapshot
+	// Example: false
+	RefreshExcludeOlder bool `json:"refresh_exclude_older,omitempty" yaml:"refresh_exclude_older,omitempty"`
+
 	// Source project name (for copy and local image)
 	// Example: blah
 	Project string `json:"project,omitempty" yaml:"project,omitempty"`
